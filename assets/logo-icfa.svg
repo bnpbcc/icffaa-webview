@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="ICFA">
+  <rect width="192" height="192" rx="24" fill="#0b3b67"/>
+  <path d="M96 18 156 45v43c0 39-24 70-60 86-36-16-60-47-60-86V45l60-27Z" fill="#ffffff" opacity=".14"/>
+  <path d="M96 34 140 54v33c0 30-17 54-44 68-27-14-44-38-44-68V54l44-20Z" fill="none" stroke="#c59b38" stroke-width="7"/>
+  <text x="96" y="104" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" text-anchor="middle">ICFA</text>
+  <text x="96" y="130" fill="#dfeaf4" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle">CIBERDEFENSA</text>
+</svg>
