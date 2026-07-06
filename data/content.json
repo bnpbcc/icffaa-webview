@@ -15,6 +15,15 @@
     "secondaryActionTarget": "#novedades",
     "footerText": "Publicacion web institucional y app movil WebView."
   },
+  "adminAccess": {
+    "enabled": true,
+    "tapsRequired": 5,
+    "adminUrl": "admin.html",
+    "passwordHash": "cc8d6bec88c2873cc1311696edd92b3e37f2dc422af62dc914abd3e2a53138a5",
+    "title": "Acceso de administracion",
+    "message": "Ingrese la contrasena de administracion. Luego necesitara el token de GitHub para publicar cambios.",
+    "buttonText": "Ingresar"
+  },
   "identityLogos": [
     {
       "alt": "Facultad Militar Conjunta",
@@ -29,15 +38,6 @@
       "image": "assets/official/mindef-footer.png"
     }
   ],
-  "adminAccess": {
-    "enabled": true,
-    "tapsRequired": 5,
-    "adminUrl": "admin.html",
-    "passwordHash": "cc8d6bec88c2873cc1311696edd92b3e37f2dc422af62dc914abd3e2a53138a5",
-    "title": "Acceso de administracion",
-    "message": "Ingrese la contrasena de administracion. Luego necesitara el token de GitHub para publicar cambios.",
-    "buttonText": "Ingresar"
-  },
   "sections": [
     {
       "id": "institucional",
@@ -282,6 +282,16 @@
       "mode": "session",
       "title": "Bienvenido al sitio institucional",
       "text": "Este espacio centraliza novedades, agenda, oferta academica y recursos del Instituto de Ciberdefensa.",
+      "image": "assets/official/icffaa-icon.png",
+      "buttonText": "OK",
+      "autoCloseSeconds": 10
+    },
+    {
+      "id": "nuevo-popup",
+      "enabled": true,
+      "mode": "session",
+      "title": "Nuevo aviso",
+      "text": "Texto del aviso.pruebaaaaaa",
       "image": "assets/official/icffaa-icon.png",
       "buttonText": "OK",
       "autoCloseSeconds": 10
