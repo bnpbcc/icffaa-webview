@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b3b67">
+    <title>Administracion - Instituto de Ciberdefensa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <section class="admin-hero">
+        <a class="admin-brand" href="index.html">
+          <img src="assets/official/icffaa-icon.png" alt="Logo ICFFAA">
+          <span>
+            <strong>Administracion de contenidos</strong>
+            <small>Mini CMS institucional</small>
+          </span>
+        </a>
+        <p>
+          Edite secciones, noticias, agenda, galeria, popups e imagenes sin tocar el codigo.
+          Para publicar en GitHub Pages, conecte un token de GitHub con permiso de escritura.
+        </p>
+      </section>
+
+      <section class="admin-panel">
+        <div class="admin-tabs" role="tablist" aria-label="Secciones de administracion">
+          <button class="tab active" type="button" data-tab="conexion">Conexion</button>
+          <button class="tab" type="button" data-tab="sitio">Sitio</button>
+          <button class="tab" type="button" data-tab="acceso">Acceso</button>
+          <button class="tab" type="button" data-tab="secciones">Secciones</button>
+          <button class="tab" type="button" data-tab="noticias">Noticias</button>
+          <button class="tab" type="button" data-tab="eventos">Eventos</button>
+          <button class="tab" type="button" data-tab="popups">Popups</button>
+          <button class="tab" type="button" data-tab="imagenes">Imagenes</button>
+          <button class="tab" type="button" data-tab="json">JSON</button>
+        </div>
+
+        <section class="tab-panel active" id="conexion">
+          <div class="admin-grid">
+            <label>
+              Usuario u organizacion
+              <input id="owner" autocomplete="username" placeholder="usuario-github">
+            </label>
+            <label>
+              Repositorio
+              <input id="repo" placeholder="nombre-del-repositorio">
+            </label>
+            <label>
+              Rama
+              <input id="branch" value="main">
+            </label>
+            <label>
+              Ruta del contenido
+              <input id="path" value="data/content.json">
+            </label>
+            <label class="full">
+              Token de GitHub
+              <input id="token" type="password" autocomplete="current-password" placeholder="ghp_...">
+            </label>
+          </div>
+          <div class="admin-actions">
+            <button class="button primary" type="button" id="loadGithub">Cargar desde GitHub</button>
+            <button class="button secondary dark" type="button" id="saveGithub">Guardar en GitHub</button>
+            <button class="button ghost" type="button" id="loadLocal">Cargar contenido local</button>
+            <a class="button ghost" href="index.html" target="_blank" rel="noopener">Vista publica</a>
+          </div>
+          <p class="admin-note">
+            No se guarda una clave fija dentro de la web. Para GitHub Pages se usa token del administrador; en servidor dedicado se reemplaza por login real.
+          </p>
+        </section>
+
+        <section class="tab-panel" id="sitio">
+          <div class="panel-heading">
+            <h2>Datos generales</h2>
+          </div>
+          <div class="admin-grid" id="siteEditor"></div>
+        </section>
+
+        <section class="tab-panel" id="acceso">
+          <div class="panel-heading">
+            <h2>Acceso oculto</h2>
+            <button class="button ghost compact" type="button" id="hashPassword">Generar hash</button>
+          </div>
+          <div class="admin-grid" id="accessEditor"></div>
+          <div class="admin-grid password-hash-grid">
+            <label>
+              Nueva contrasena
+              <input id="plainAdminPassword" type="password" placeholder="Nueva contrasena para generar hash">
+            </label>
+          </div>
+          <p class="admin-note">
+            La web compara hashes, no guarda la contrasena escrita. Esto solo oculta el panel en una web estatica; el guardado real sigue protegido por token de GitHub.
+          </p>
+        </section>
+
+        <section class="tab-panel" id="secciones">
+          <div class="panel-heading">
+            <h2>Secciones configurables</h2>
+            <div class="admin-actions tight">
+              <select id="newSectionType" aria-label="Tipo de seccion">
+                <option value="cards">Tarjetas</option>
+                <option value="programs">Oferta academica</option>
+                <option value="media">Texto e imagen</option>
+                <option value="gallery">Carrusel</option>
+                <option value="newsEvents">Noticias y agenda</option>
+                <option value="split">Texto + lista</option>
+                <option value="links">Enlaces/documentos</option>
+                <option value="notice">Comunicado destacado</option>
+                <option value="contact">Contacto</option>
+              </select>
+              <button class="button primary compact" type="button" id="addSection">Agregar seccion</button>
+            </div>
+          </div>
+          <div class="editor-list" id="sectionsEditor"></div>
+        </section>
+
+        <section class="tab-panel" id="noticias">
+          <div class="panel-heading">
+            <h2>Noticias</h2>
+            <button class="button primary compact" type="button" data-add-list="news">Agregar noticia</button>
+          </div>
+          <div class="editor-list" id="newsEditor"></div>
+        </section>
+
+        <section class="tab-panel" id="eventos">
+          <div class="panel-heading">
+            <h2>Agenda</h2>
+            <button class="button primary compact" type="button" data-add-list="events">Agregar evento</button>
+          </div>
+          <div class="editor-list" id="eventsEditor"></div>
+        </section>
+
+        <section class="tab-panel" id="popups">
+          <div class="panel-heading">
+            <h2>Popups informativos</h2>
+            <button class="button primary compact" type="button" data-add-list="popups">Agregar popup</button>
+          </div>
+          <div class="editor-list" id="popupsEditor"></div>
+        </section>
+
+        <section class="tab-panel" id="imagenes">
+          <div class="panel-heading">
+            <h2>Imagenes</h2>
+          </div>
+          <div class="admin-grid">
+            <label>
+              Archivo
+              <input id="imageFile" type="file" accept="image/*">
+            </label>
+            <label>
+              Nombre destino
+              <input id="imageName" placeholder="foto-instituto.jpg">
+            </label>
+            <label class="full">
+              Ruta sugerida
+              <input id="imagePath" value="assets/uploads/foto-instituto.jpg">
+            </label>
+          </div>
+          <div class="image-preview" id="imagePreview"></div>
+          <div class="admin-actions">
+            <button class="button primary" type="button" id="uploadImageGithub">Subir imagen a GitHub</button>
+            <button class="button ghost" type="button" id="addImageToGallery">Agregar a galeria como base64</button>
+            <button class="button ghost" type="button" id="copyImagePath">Copiar ruta</button>
+          </div>
+          <p class="admin-note">
+            Para demo local, puede agregar la imagen como base64. Para produccion, conviene subirla a GitHub o al servidor y usar una ruta tipo `assets/uploads/foto.jpg`.
+          </p>
+        </section>
+
+        <section class="tab-panel" id="json">
+          <div class="panel-heading">
+            <h2>Contenido completo</h2>
+            <button class="button primary compact" type="button" id="applyJson">Aplicar JSON</button>
+          </div>
+          <textarea id="jsonEditor" spellcheck="false"></textarea>
+          <div class="admin-actions">
+            <button class="button ghost" type="button" id="downloadJson">Descargar JSON</button>
+            <button class="button ghost" type="button" id="copyJson">Copiar JSON</button>
+          </div>
+        </section>
+
+        <p class="status" id="status" role="status">Listo para editar.</p>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
