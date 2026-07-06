@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b3b67">
+    <title>Instituto de Ciberdefensa de las Fuerzas Armadas</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <span id="topbarLeft">Universidad de la Defensa Nacional</span>
+        <span id="topbarRight">Estado Mayor Conjunto de las Fuerzas Armadas</span>
+      </div>
+
+      <nav class="navbar" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio" aria-label="Inicio">
+          <img src="assets/official/icffaa-icon.png" alt="Logo institucional ICFFAA">
+          <span>
+            <strong id="brandTitle">Instituto de Ciberdefensa</strong>
+            <small id="brandSubtitle">Formacion, investigacion y extension</small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="main-menu" id="main-menu"></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-media" id="heroMedia" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow" id="heroEyebrow">Sitio institucional</p>
+          <h1 id="heroTitle">Instituto de Ciberdefensa de las Fuerzas Armadas</h1>
+          <p id="heroText">
+            Espacio academico orientado a la capacitacion, investigacion y difusion
+            del pensamiento institucional en ciberdefensa para la accion militar conjunta.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" id="primaryAction" href="#academica">Ver oferta academica</a>
+            <a class="button secondary" id="secondaryAction" href="#novedades">Ultimas novedades</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="identity-strip" id="identityStrip" aria-label="Organismos institucionales">
+        <img src="assets/official/fmc-footer.png" alt="Facultad Militar Conjunta">
+        <img src="assets/official/undef-footer.png" alt="Universidad de la Defensa Nacional">
+        <img src="assets/official/mindef-footer.png" alt="Ministerio de Defensa">
+      </section>
+
+      <div id="managedSections"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logos" id="footerLogos" aria-label="Logos institucionales">
+        <img src="assets/official/fmc-footer.png" alt="Facultad Militar Conjunta">
+        <img src="assets/official/undef-footer.png" alt="UNDEF">
+        <img src="assets/official/mindef-footer.png" alt="Ministerio de Defensa">
+      </div>
+      <div>
+        <p id="footerTitle">Instituto de Ciberdefensa de las Fuerzas Armadas</p>
+        <p><span id="footerText">Publicacion web institucional y app movil WebView.</span></p>
+      </div>
+    </footer>
+
+    <div class="popup-layer" id="popupLayer" hidden></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
