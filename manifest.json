@@ -1,0 +1,16 @@
+{
+  "name": "Instituto de Ciberdefensa",
+  "short_name": "ICFA",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b3b67",
+  "icons": [
+    {
+      "src": "assets/official/icffaa-icon.png",
+      "sizes": "300x300",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
