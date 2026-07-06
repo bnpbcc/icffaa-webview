@@ -1,0 +1,290 @@
+{
+  "updatedAt": "2026-07-06",
+  "site": {
+    "topbarLeft": "Universidad de la Defensa Nacional",
+    "topbarRight": "Estado Mayor Conjunto de las Fuerzas Armadas",
+    "brandTitle": "Instituto de Ciberdefensa",
+    "brandSubtitle": "Formacion, investigacion y extension",
+    "heroEyebrow": "Sitio institucional",
+    "heroTitle": "Instituto de Ciberdefensa de las Fuerzas Armadas",
+    "heroText": "Espacio academico orientado a la capacitacion, investigacion y difusion del pensamiento institucional en ciberdefensa para la accion militar conjunta.",
+    "heroImage": "assets/official/fmc-carrousel-icffaa.jpg",
+    "primaryActionLabel": "Ver oferta academica",
+    "primaryActionTarget": "#academica",
+    "secondaryActionLabel": "Ultimas novedades",
+    "secondaryActionTarget": "#novedades",
+    "footerText": "Publicacion web institucional y app movil WebView."
+  },
+  "identityLogos": [
+    {
+      "alt": "Facultad Militar Conjunta",
+      "image": "assets/official/fmc-footer.png"
+    },
+    {
+      "alt": "Universidad de la Defensa Nacional",
+      "image": "assets/official/undef-footer.png"
+    },
+    {
+      "alt": "Ministerio de Defensa",
+      "image": "assets/official/mindef-footer.png"
+    }
+  ],
+  "adminAccess": {
+    "enabled": true,
+    "tapsRequired": 5,
+    "adminUrl": "admin.html",
+    "passwordHash": "cc8d6bec88c2873cc1311696edd92b3e37f2dc422af62dc914abd3e2a53138a5",
+    "title": "Acceso de administracion",
+    "message": "Ingrese la contrasena de administracion. Luego necesitara el token de GitHub para publicar cambios.",
+    "buttonText": "Ingresar"
+  },
+  "sections": [
+    {
+      "id": "institucional",
+      "navLabel": "Institucional",
+      "type": "cards",
+      "visible": true,
+      "band": false,
+      "eyebrow": "Institucional",
+      "title": "Mision academica y compromiso conjunto",
+      "text": "",
+      "cards": [
+        {
+          "title": "Proposito",
+          "text": "Impulsar la formacion del personal militar y civil vinculado al ambito de la defensa, fortaleciendo competencias profesionales, criterio estrategico y conocimientos aplicados a la ciberdefensa."
+        },
+        {
+          "title": "Vision",
+          "text": "Consolidarse como referencia academica en ciberdefensa dentro del sistema universitario de la defensa, promoviendo excelencia, cooperacion interinstitucional y actualizacion permanente."
+        },
+        {
+          "title": "Lineas de accion",
+          "text": "Formacion universitaria, actividades de extension, investigacion, publicaciones, jornadas academicas y vinculacion con organismos del sistema de defensa nacional."
+        }
+      ],
+      "logoBlock": {
+        "enabled": true,
+        "image": "assets/official/undef-footer.png",
+        "title": "Ambito academico de la UNDEF",
+        "text": "El Instituto de Ciberdefensa se integra al sistema universitario de la defensa, articulando su actividad con la Universidad de la Defensa Nacional, la Facultad Militar Conjunta y el Ministerio de Defensa."
+      }
+    },
+    {
+      "id": "academica",
+      "navLabel": "Oferta academica",
+      "type": "programs",
+      "visible": true,
+      "band": true,
+      "eyebrow": "Oferta academica",
+      "title": "Trayectos formativos",
+      "items": [
+        {
+          "label": "Diplomatura universitaria",
+          "title": "Gestion de la Ciberdefensa",
+          "text": "Formacion orientada a conduccion, planeamiento, marco institucional y gestion de capacidades."
+        },
+        {
+          "label": "Diplomatura universitaria",
+          "title": "Operaciones de Ciberdefensa",
+          "text": "Trayecto destinado a comprender procesos, coordinacion y soporte academico de operaciones conjuntas."
+        },
+        {
+          "label": "Tecnicatura universitaria",
+          "title": "Operaciones de Ciberdefensa",
+          "text": "Propuesta de formacion tecnica con base universitaria y orientacion profesional."
+        }
+      ]
+    },
+    {
+      "id": "comunidad",
+      "navLabel": "Comunidad",
+      "type": "media",
+      "visible": true,
+      "layout": "image-left",
+      "eyebrow": "Comunidad academica",
+      "title": "Un espacio para formar, investigar y vincular capacidades",
+      "text": "La propuesta institucional integra actividades academicas, extension, investigacion y cooperacion entre organismos del sistema de defensa.",
+      "image": "assets/official/icffaa-inauguracion.jpg",
+      "buttonLabel": "",
+      "buttonUrl": ""
+    },
+    {
+      "id": "galeria",
+      "navLabel": "Galeria",
+      "type": "gallery",
+      "visible": true,
+      "eyebrow": "Galeria institucional",
+      "title": "Imagenes del Instituto",
+      "durationSeconds": 6,
+      "items": [
+        {
+          "title": "Instituto de Ciberdefensa de las Fuerzas Armadas",
+          "caption": "Imagen institucional publicada por la Facultad Militar Conjunta.",
+          "image": "assets/official/fmc-carrousel-icffaa.jpg",
+          "source": "FMC - UNDEF"
+        },
+        {
+          "title": "Actividad institucional",
+          "caption": "Registro oficial del espacio academico del ICFFAA.",
+          "image": "assets/official/icffaa-inauguracion.jpg",
+          "source": "Moodle ICFFAA"
+        },
+        {
+          "title": "Formacion y actualizacion",
+          "caption": "Material grafico institucional para propuestas de ciberdefensa.",
+          "image": "assets/official/icffaa-curso-ciberops.png",
+          "source": "Moodle ICFFAA"
+        },
+        {
+          "title": "Investigacion aplicada",
+          "caption": "Linea visual utilizada por el entorno academico del Instituto.",
+          "image": "assets/official/icffaa-curso-iarapha.jpeg",
+          "source": "Moodle ICFFAA"
+        }
+      ]
+    },
+    {
+      "id": "novedades",
+      "navLabel": "Novedades",
+      "type": "newsEvents",
+      "visible": true,
+      "eyebrow": "Novedades",
+      "title": "Noticias y actividades recientes",
+      "agendaEyebrow": "Agenda",
+      "agendaTitle": "Fechas proximas"
+    },
+    {
+      "id": "investigacion",
+      "navLabel": "Investigacion",
+      "type": "split",
+      "visible": true,
+      "layout": "text-left",
+      "eyebrow": "Investigacion y extension",
+      "title": "Produccion academica y vinculacion institucional",
+      "text": "El instituto promueve espacios de investigacion aplicada, publicaciones, observatorios, jornadas, conferencias y acciones de extension orientadas a la comunidad academica de la defensa.",
+      "items": [
+        {
+          "title": "Lineas de investigacion",
+          "text": "Estudios sobre ciberdefensa, doctrina, planeamiento, educacion y capacidades conjuntas."
+        },
+        {
+          "title": "Biblioteca y recursos",
+          "text": "Repositorio de normativa, documentos academicos, publicaciones y material de consulta."
+        },
+        {
+          "title": "Eventos",
+          "text": "Conferencias, charlas, seminarios, visitas institucionales y encuentros de intercambio."
+        }
+      ]
+    },
+    {
+      "id": "recursos",
+      "navLabel": "Recursos",
+      "type": "links",
+      "visible": true,
+      "band": true,
+      "eyebrow": "Recursos",
+      "title": "Documentos y enlaces utiles",
+      "text": "Accesos rapidos para consulta institucional y academica.",
+      "items": [
+        {
+          "title": "Facultad Militar Conjunta",
+          "text": "Sitio institucional de la FMC.",
+          "url": "https://undef.edu.ar/fmc/home.php",
+          "label": "Abrir enlace"
+        },
+        {
+          "title": "Argentina.gob.ar",
+          "text": "Informacion publica del Instituto de Ciberdefensa.",
+          "url": "https://www.argentina.gob.ar/estado-mayor-conjunto/instituto-ciberdefensa",
+          "label": "Abrir enlace"
+        },
+        {
+          "title": "Campus ICFFAA",
+          "text": "Entorno academico del Instituto.",
+          "url": "https://mood-icffaa.fuerzas-armadas.mil.ar",
+          "label": "Abrir enlace"
+        }
+      ]
+    },
+    {
+      "id": "contacto",
+      "navLabel": "Contacto",
+      "type": "contact",
+      "visible": true,
+      "eyebrow": "Contacto",
+      "title": "Canales institucionales",
+      "text": "Datos editables para la version final del sitio.",
+      "items": [
+        {
+          "label": "Direccion",
+          "title": "Av. Cabildo 381, Ciudad Autonoma de Buenos Aires"
+        },
+        {
+          "label": "Correo electronico",
+          "title": "contacto@instituto-ciberdefensa.mil.ar"
+        },
+        {
+          "label": "Telefono",
+          "title": "(011) 4346-8600"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "visible": true,
+      "date": "2026-07-01",
+      "category": "Convenio",
+      "title": "Convenio de colaboracion academica con la Escuela de Gobierno UA",
+      "summary": "La Facultad Militar Conjunta informo una nueva accion de vinculacion para fortalecer actividades academicas.",
+      "url": "https://undef.edu.ar/fmc/home.php"
+    },
+    {
+      "visible": true,
+      "date": "2026-06-26",
+      "category": "Conferencia",
+      "title": "Conferencia sobre desafios estrategicos y desarrollo institucional",
+      "summary": "Actividad de extension y comunicacion orientada a la comunidad academica de la defensa.",
+      "url": "https://undef.edu.ar/fmc/home.php"
+    },
+    {
+      "visible": true,
+      "date": "2026-06-17",
+      "category": "Cooperacion",
+      "title": "Convenio marco de colaboracion y cooperacion academica",
+      "summary": "Nueva instancia para ampliar redes de trabajo, intercambio academico y acciones de extension.",
+      "url": "https://undef.edu.ar/fmc/home.php"
+    }
+  ],
+  "events": [
+    {
+      "visible": true,
+      "date": "2026-08-01",
+      "title": "Preinscripcion a propuestas formativas",
+      "place": "Modalidad segun programa",
+      "summary": "Apertura estimada de consultas para trayectos academicos del segundo cuatrimestre.",
+      "url": "https://undef.edu.ar/fmc/oferta-academica.php#ICFA"
+    },
+    {
+      "visible": true,
+      "date": "2026-09-07",
+      "title": "Inicio de actividades academicas",
+      "place": "Av. Cabildo 381, CABA",
+      "summary": "Fecha de referencia para el calendario academico institucional.",
+      "url": "https://undef.edu.ar/fmc/oferta-academica.php#ICFA"
+    }
+  ],
+  "popups": [
+    {
+      "id": "bienvenida-icffaa",
+      "enabled": true,
+      "mode": "session",
+      "title": "Bienvenido al sitio institucional",
+      "text": "Este espacio centraliza novedades, agenda, oferta academica y recursos del Instituto de Ciberdefensa.",
+      "image": "assets/official/icffaa-icon.png",
+      "buttonText": "OK",
+      "autoCloseSeconds": 10
+    }
+  ]
+}
